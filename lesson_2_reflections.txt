@@ -5,3 +5,28 @@ When you initialize a repository git creates a .git file which is hidden that tr
 -How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 the staging area is different because it allows you to see what you are about to commit to the repository. the working directory is where your files live and staging area takes the files from the working directory and places them in the repository.
+
+-How can you use the staging area to make sure you have one commit per logical change?
+
+you use git diff and git diff staged to see what the changes are and if they are at a logical change you can commit them to the repo
+
+-What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+branches are useful for when you have a working version of your file but want to try a new experiment or create another version in another language. it keeps the original working file intact
+
+-How do the diagrams help you visualize the branch structure?
+
+the diagrams help to show which commits can be reached from where. if you make a commits in a branch outside the master you cant reach them unless you checkout that branch... also  if you make a commit to an old version you should make a branch there or you will not be able to reach it ever
+
+-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When merging two branches together you can access contents of both. the merge commit merges the code in both into the merge commit for a new file with code from both. older versions of both can still be accessed via git log anf git checkout
+
+-What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging will merge to gether different code but if there are conflicts you will have to sort them out manually before being able to commit
+
+
+
+
+//git diff, git diff --staged, git reset --hard, git branch, git branch new_branch_name, git checkout, git log, git add, git commit, git merge, git log --graph, git log --graph --oneline, git init, git status, no i can use git undo-commit becuase of (git config --global alias.undo-commit 'reset --soft HEAD^'), git remote, git remote add, git push

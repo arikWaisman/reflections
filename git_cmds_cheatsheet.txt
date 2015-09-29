@@ -1,0 +1,2 @@
+
+git diff, git diff --staged, git reset --hard, git branch, git branch new_branch_name, git checkout, git log, git add, git commit, git merge, git log --graph, git log --graph --oneline, git init, git status, no i can use git undo-commit becuase of (git config --global alias.undo-commit 'reset --soft HEAD^'), git remote, git remote add, git push
